@@ -1,0 +1,118 @@
+.container {
+  width: 1280px;
+  height: 1280px;
+  margin: 0px auto;
+}
+
+.boxwrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(246, 238, 228);
+  position: relative;
+  display: flex;
+}
+
+.image3 {
+  width: 430px;
+  height: auto;
+  position: absolute;
+  left: 80px;
+  top: 80px;
+}
+
+.image3:hover {
+  width: 450px;
+  height: auto;
+  filter: drop-shadow(5px 5px gray);
+}
+
+.image2 {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  right: 90px;
+  top: 60px;
+}
+
+.image2:hover {
+  width: 270px;
+  height: auto;
+  filter: drop-shadow(5px 5px gray);
+}
+
+.history {
+  display: center;
+  position: absolute;
+  left: 580px;
+  top: 50px;
+}
+
+/* 복붙 연혁 */
+.history dl {
+  position: relative;
+  padding: 0 0 30px 48px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.history dl:before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ddd;
+}
+
+.history dl:first-child:before {
+  top: 10px;
+  height: calc(100% - 10px);
+}
+
+.history dt {
+  position: relative;
+  font-weight: bold;
+  color: #000;
+  line-height: 1;
+  width: 15%;
+}
+
+.history dt:before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #fff;
+  border: 4px solid #ffd67a;
+  box-sizing: border-box;
+}
+
+.history dd {
+  width: 85%;
+}
+/* 복붙 연혁 */
+
+.imageback:hover {
+  cursor: url("./images/image1_2.png"), auto;
+}
+
+.imageback {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.fontsize {
+  font-size: 20px;
+}
